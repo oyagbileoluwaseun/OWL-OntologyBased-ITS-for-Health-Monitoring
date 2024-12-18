@@ -1,0 +1,620 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.example.org/ontology#"
+     xml:base="http://www.example.org/ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/user/Documents/rpm.owx#hasSymptom">
+        <rdfs:domain rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Disease"/>
+        <rdfs:range rdf:resource="file:/C:/Users/user/Documents/rpm.owx#SymptomsAshma"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#hasThreat -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/user/Documents/rpm.owx#hasThreat">
+        <rdfs:domain rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Device"/>
+        <rdfs:range rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Threat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#monitors -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/user/Documents/rpm.owx#monitors">
+        <rdfs:domain rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Device"/>
+        <rdfs:range rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#respondedBy -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/user/Documents/rpm.owx#respondedBy">
+        <rdfs:domain rdf:resource="file:/C:/Users/user/Documents/rpm.owx#SecurityIncident"/>
+        <rdfs:range rdf:resource="file:/C:/Users/user/Documents/rpm.owx#HealthcareProvider"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#treatedBy -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/user/Documents/rpm.owx#treatedBy">
+        <rdfs:domain rdf:resource="file:/C:/Users/user/Documents/rpm.owx#SymptomsAshma"/>
+        <rdfs:range rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#age -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/user/Documents/rpm.owx#age">
+        <rdfs:domain rdf:resource="file:/C:/Users/user/Documents/rpm.owx#PersonalInformation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#name -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/user/Documents/rpm.owx#name">
+        <rdfs:domain rdf:resource="file:/C:/Users/user/Documents/rpm.owx#PersonalInformation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#severityLevel -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/user/Documents/rpm.owx#severityLevel">
+        <rdfs:domain rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Threat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Asthma -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Asthma">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#BloodPressureMonitor -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#BloodPressureMonitor">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#WearableDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#ChestTightness -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#ChestTightness">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#SymptomsAshma"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#ContactInformation -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#ContactInformation">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#PersonalInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Countermeasure -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Countermeasure"/>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Device -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Device"/>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Diabetes -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Diabetes">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#DiagnosticTest -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#DiagnosticTest"/>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Disease -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Disease"/>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Doctor -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Doctor">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#HealthcareProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#ECGMonitor -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#ECGMonitor">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#WearableDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Exploit -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Exploit"/>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#HealthcareProvider -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#HealthcareProvider"/>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Hypertension -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Hypertension">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Malware -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Malware">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Threat"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#ManInTheMiddle -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#ManInTheMiddle">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Threat"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Nurse -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Nurse">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#HealthcareProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Patient -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Patient"/>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#PersonalInformation -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#PersonalInformation">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Phishing -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Phishing">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Threat"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#SecurityIncident -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#SecurityIncident"/>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#ShortBreath -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#ShortBreath">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#SymptomsAshma"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Sneezing -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Sneezing">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#SymptomsAshma"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#SymptomsAshma -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#SymptomsAshma">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Asthma"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Threat -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Threat">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#SecurityIncident"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Treatment -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Treatment"/>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#Vulnerability -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#Vulnerability">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#SecurityIncident"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/user/Documents/rpm.owx#WearableDevice -->
+
+    <owl:Class rdf:about="file:/C:/Users/user/Documents/rpm.owx#WearableDevice">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#BloodMonitoringTest -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#BloodMonitoringTest">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#DiagnosticTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#BlurredVision -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#BlurredVision">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SymptomsHypertension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ChemoTherapy -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ChemoTherapy">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#CyberSecurity -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#CyberSecurity">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Countermeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DataCaptured -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DataCaptured">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DeviceOutput -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DeviceOutput">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataCaptured"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DeviceProperties -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DeviceProperties">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#EducationAwareness -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#EducationAwareness">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CyberSecurity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Fatigue -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Fatigue">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SymptomsHypertension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Firewalls -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Firewalls">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#CyberSecurity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#FullName -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#FullName">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#PersonalInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Gender -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Gender">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#PersonalInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#HasNoThreat -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#HasNoThreat">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MedicalHistory"/>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#VitalSignsTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#HasThreat -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#HasThreat">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Exploit"/>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MedicalHistory"/>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#VitalSignsTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Headaches -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Headaches">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SymptomsHypertension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ImageTest -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ImageTest">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#DiagnosticTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#IncreasedThirst -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#IncreasedThirst">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SymptomsDiabetes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#InformationSecurity -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#InformationSecurity">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Countermeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#LaboratoryTechnicians -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#LaboratoryTechnicians">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#HealthcareProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#MeasurementCapabilities -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#MeasurementCapabilities">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DeviceProperties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#MedicalHistory -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#MedicalHistory">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Medications -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Medications">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ObservationValue -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ObservationValue">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataCaptured"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PhysicalSecurity -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PhysicalSecurity">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Countermeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Polyuria -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Polyuria">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SymptomsDiabetes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ReportingVulnerabilities -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReportingVulnerabilities">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhysicalSecurity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#StrongPassword -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#StrongPassword">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#InformationSecurity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SymptomsDiabetes -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SymptomsDiabetes">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Diabetes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SymptomsHypertension -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SymptomsHypertension">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Hypertension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Therapy -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Therapy">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#VitalSignsTest -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#VitalSignsTest">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/user/Documents/rpm.owx#DiagnosticTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#WeightLoss -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#WeightLoss">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SymptomsDiabetes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#2FactorAuth -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#2FactorAuth">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#InformationSecurity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#HasNoThreat -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#HasNoThreat">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#VitalSignsTest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#HasThreat -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#HasThreat">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#VitalSignsTest"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
